@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Cyter</h1>
+        <p class="description">Welcome, easily convert from one currency to another.</p>
+    </header>
+    <form>
+        <div id="input">
+            <label>Value to Convert</label>
+            <input name="amount" id="value-input" min="0" placeholder="000">
+        </div>
+        <div id="currency-src">
+            <label for="initial-currency">From</label>
+            <select id="initial-currency" class="currency-selector">
+
+            </select>
+        </div>
+        <div id="currency-target">
+            <label for="target-currency">To</label>
+            <select id="target-currency" class="currency-selector">
+
+            </select>
+        </div>
+        <div id="controls">
+            <button type="button" id="clear-button" class="button">Clear</button>
+            <button type="button" id="convert-button" class="button">Convert</button>
+        </div>
+        <div id="output">
+            <label for="value-output">Answer</label>
+            <div id="value-output"></div>
+        </div>
+    </form>
+    <script src="../js/main.js"></script>
+</body>
+</html>
